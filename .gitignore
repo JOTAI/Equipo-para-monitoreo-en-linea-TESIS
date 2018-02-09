@@ -1,0 +1,16 @@
+# Ignora los archivos que se generan al compilar el LateX
+*.aux
+*.bbl
+*.blg
+*.exa
+*.fdb_latexmk
+*.fls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.synctex.gz
+*.toc
