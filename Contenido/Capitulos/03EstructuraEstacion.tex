@@ -139,7 +139,7 @@ movil, por otro lado, el operador Bitel si cuenta con conexión 3G en la zona.
 
 %(ver figura~\ref{cap3:fig:coverturaMovil})
 \figura{Bitmap/03/CoverturaMovil}{width=0.7\textwidth}%
-       {cap3:fig:coverturaMovil}{Mapa de covertura de la región del puente.}
+       {cap3:fig:coverturaMovil}{Mapa de covertura de red de la zona según OSIPTEL.}
 
 
 %-------------------------------------------------------------------
@@ -181,21 +181,64 @@ Se considera agregar al gabinete principal una cerradora de candado con el fin d
 dificultad de apertura para la extracción de componentes. Además, se considera que la camará
 que se utilizará para la estación debe ubicarse por debajo de esta para poder capturar 
 imagenes, ya sea de rio abajo o rio arriba. Obteniendo así una estructura como la que se puede
-observar en la figura
+observar en la figura~\ref{cap3:fig:disenoBaseGabinetePrincipal}.
+
+%(ver figura~\ref{cap3:fig:diseñoBaseGabinetePrincipal})
+\figura{Bitmap/03/DisenoBaseGabinetePrincipal}{width=0.7\textwidth}%
+       {cap3:fig:disenoBaseGabinetePrincipal}{Plano del diseño de la estructura de sujeción del gabinete principal de la estación de monitoreo.}
+
+Por otro lado, es necesario considerar que tanto la cámara que tomara las fotografías y el sensor
+de nivel, necesariamente deben ubicarse en el exterior del gabinete, en diferentes posiciones
+con el fin de obtener la información mas pertinente para la generación de alertas y reportes.
+Esto implica proteger de hurto ambos componentes, por lo que se elije el diseño de jaula debido
+a que el diseño final no depende exactamente de la forma del componente, lo cual brinda facilidad para 
+establecer las dimensiones. Con esta consideración se diseña las estructuras basandose en sus dimensiones
+ mas importantes como ancho y alto total\footnote{Las caracteristicas técnicas
+de ambos componentes se indican en los capítulos siguientes.}, obteniendose así la 
+figura~\ref{cap3:fig:disenoProteccionCamara} y la figura~\ref{cap3:fig:disenoProteccionSensorNivel}.
+
+%(ver figura~\ref{cap3:fig:diseñoProteccionCamara})
+\figura{Bitmap/03/DisenoProteccionCamara}{width=0.7\textwidth}%
+       {cap3:fig:disenoProteccionCamara}{Plano del diseño de la estructura de protección para la cámara D-LINK DCS942l.}
+
+%(ver figura~\ref{cap3:fig:diseñoProteccionSensorNivel})
+\figura{Bitmap/03/DisenoProteccionSensorNivel}{width=0.7\textwidth}%
+       {cap3:fig:disenoProteccionSensorNivel}{Plano del diseño de la estructura deprotección para el sensor de nivel MB7389.}
+
+Una vez finalizados los planos, estos se llevan a fabricación, el método constructivo es
+realizado utilizando doblado de laminas y soldadura. El acabado de los componentes no
+requiere de gran presición ni exactitud, por lo que cualquier taller de metal mecánica
+puede fabricar los componentes. Obteniendo las estructuras que se observan en la figura~\ref{fig:cap3:estructurasFabricadas}.
+
+\begin{figure}[t]
+  \centering
+%
+  \begin{SubFloat}
+    {\label{fig:cap3:estructuraCamara}%
+     Estructura de protección de la cámara}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/03/EstructuraProteccionCamara}%
+  \end{SubFloat}
+\qquad
+  \begin{SubFloat}
+    {\label{fig:cap3:estructuraSensorNivel}%
+     Estructura de protección del sensor de nivel}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/03/EstructuraProteccionSensorNivel}%
+  \end{SubFloat}
+  % La siguiente no entra; ira en otra 'linea'
+  \begin{SubFloat}
+    {\label{fig:cap3:estructuraGabinetePrincipal}%
+     Estructura de soporte del gabinete principal}%
+    \includegraphics[width=0.45\textwidth]%
+                    {Imagenes/Bitmap/03/EstructuraBaseGabinetePrincipal}%
+  \end{SubFloat}
+\caption{Estructuras fabricadas para la estación de monitoreo.%
+         \label{fig:cap3:estructurasFabricadas}}
+\end{figure}
 
 
-
-
-
-
-
-
-
-
-
-
-
-
+%% Finalizado el capitulo 3, borrar abajo
 
 En primer lugar, es necesario destacar que los ficheros \texttt{.tex}
 \emph{deben tener} codificación ISO-8859-1. Esto es lo que ocurre de
